@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AiryBubble Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cyber-grid"></div>
+  <div class="floor"></div>
+  <div class="container">
+    <div class="left">
+      <h1>AiryBubble</h1>
+      <p>趣味でプログラミングをしている学生です。好きなゲームはMinecraftで、好きなお菓子は辣条です。外国のソフトを翻訳したり、自分でも魅力がよく分からないようなソフトを開発したりしてます。( ﾟдﾟ)ﾉ ﾖﾛｼｸ</p>
+      <p class="domain"><a href="https://bin32.com">・BiN32</a></p>
+	  <p class="domain"><a href="https://github.com/AiryBubble">・GitHub</a></p>
+	  <p class="domain"><a href="https://qiita.com/AiryBubble">・Qiita</a></p>
+	  <p class="domain"><a href="https://namemc.com/profile/96dce50f-4d0c-4c61-82e2-25b4af41912d">・NameMC</a></p>
+	  <p class="domain">MIT License., (C) AiryBubble.</p>
+    </div>
+    <div class="right">
+      <img src="profile.webp" alt="プロフィール画像">
+    </div>
+  </div>
+  <script>
+	function randomString(length = 100) {
+	  const chars = 'АБВГҐДЃЂЕЁЀЄЖЗЅИІЇЙЍЈКЌЛЉМНЊОПРСТЋУЎФХЦЧЏШЩЪЫЬЭЮЯӐӒӘӚӔҒӶГ̧ԂԄԐԆЗ̱Ԑ̈ҔӖӁҖӜҘӞӠӢӤҊҠҚҞԞӃҜӅԒԠӍԚҢӉӇԢԊԨҤӨӦӪҦҎҪҬҴӲӮҮҰӰҲӾҺҶӋҸӴҨҼҾӸҌӬӀҀѸѠѾѺѢꙖѤѦѪѨѬѮѰѲѴѶꙮꙨꙪꙬԀ';
+	  return Array.from({ length }, () =>
+        chars.charAt(Math.floor(Math.random() * chars.length))
+	  ).join('');
+	}
+	  const intervalMs = 1000;
+	  setInterval(() => {
+	  document.title = randomString(100);
+	}, intervalMs);
+  </script>
+</body>
+</html>
