@@ -1,1 +1,2 @@
-https://*.pages.dev/* https://airybubble.com/:splat 301
+https://airybubble.pages.dev/* https://airybubble.com/:splat 301
+https://*.airybubble.pages.dev/* https://airybubble.com/:splat 301
